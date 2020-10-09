@@ -1,5 +1,5 @@
 [package]
-name = "rust_by_example"
+name = "rustbyexample"
 version = "0.1.0"
 authors = ["Adithya Balaji <adithyabsk@gmail.com>"]
 edition = "2018"
