@@ -1,0 +1,16 @@
+name: build
+
+on:
+  pull_request:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.3.3  # Rust is installed by default
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - uses: pre-commit/action@v2.0.0
